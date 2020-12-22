@@ -1,7 +1,101 @@
 /* css code for index.html */
 
+
 /* reset browser default spacings */
 * {
     margin: 0;
     padding: 0;
+    font-family: Vazir;
+    font-size: 16px;
+    background-color:#fafafa;
 }
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 8vh;
+    width: 100vw;
+}
+
+.inner-header {
+    position: auto auto;
+    display: grid;
+    grid-column-gap: 50px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.navbar {
+    display: flex;
+    grid-column-gap: 20px;
+    grid-row: 1;
+    grid-column: 2;
+
+
+}
+
+.navlink {
+    display: flex;
+    grid-row: 1;
+}
+
+.darmankade-logo {
+    grid-row: 1;
+    grid-column: 3;
+
+}
+
+.inner-header a {
+    text-decoration: none;
+}
+
+.login-link {
+    display: flex;
+    height:30px;
+    width: 80px;
+    margin-top: 4px;
+    border-radius: 3px;
+    background-color: #e4e2e2;
+    color: #197ddb;
+    margin: auto auto;
+    text-align: center;
+    align-items: center;
+    font-weight: bolder;
+    line-height: 1.5em;
+    text-align: center;
+
+}
+
+.login-link p{
+    text-align: center;
+    margin-right: auto;
+    background-color: #e4e2e2;
+}
+
+.login-link svg{
+    margin: 0 auto;
+    margin-right: 10%;
+    display: block;
+}
+
+
+/* Icon for login link */
+.login-icon{
+    transform: scaleX(-1);
+    background-color: #e4e2e2;
+
+
+}
+
+
+
+.login-link:hover {
+    color: red;
+}
+
+
+
+
+
