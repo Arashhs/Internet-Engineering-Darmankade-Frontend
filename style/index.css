@@ -139,6 +139,7 @@
     width: 58%;
     margin: 0 auto;
     border-radius: 15px;
+    vertical-align: middle;
 }
 
 
@@ -178,6 +179,11 @@
     background-color: #f87d5b;
 }
 
+.searchbar-button:hover {
+    cursor: pointer;
+    background-color: #e45c36;
+}
+
 .searchbar-text {
     direction: rtl;
     width: 500px;
@@ -194,14 +200,20 @@
     color: lightgray;
 }
 
-.search-form p{
-    height: 60px;
+.search-form span{
     text-align: center;
     vertical-align: middle;
     padding-left: 80px;
-    padding-right: 15px;
+    padding-right: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     background-color: white;
-    color: gray;
+    margin: auto;
+    align-items: center;
+}
+
+.search-form span{
+    vertical-align: middle;
 }
 
 .search-form svg{
@@ -210,6 +222,8 @@
     background-color: white;
     padding-left: 5px;
 }
+
+
 
 
 
