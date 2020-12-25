@@ -106,7 +106,8 @@
 }
 
 .nav-link a:hover{
-    color: rgb(255, 123, 0);
+    color: tomato;
+    font-weight: bolder;
 }
 
 .nav-link svg {
@@ -248,9 +249,17 @@
 }
 
 .display-all-specialities{
-    cursor: pointer;
     position: absolute;
     left: 50px;
+}
+
+.view-all-specs {
+    font-weight: bolder;
+}
+
+.view-all-specs:hover {
+    cursor: pointer;
+    color:tomato;
 }
 
 
@@ -374,7 +383,7 @@
 .quote-mark {
     position: relative;
     background-color: transparent;
-    top: -140px;
+    top: -240px;
     right: -430px;
     width: 50px;
     height: auto;
@@ -383,9 +392,11 @@
 .doctor-details {
     background-color: transparent;
     height: 90px;
-    width: 45%;
+    width: 47%;
     position: absolute;
-    bottom: 40%;
+    bottom: 25%;
+    border-top: 3px dashed rgb(160, 157, 157);
+    left: 5px;
 
 }
 
@@ -424,6 +435,7 @@
     height: 35px;
     width: 138px;
     font-size: small;
+    margin: 40px auto auto 20px;
 }
 
 .doctor-details button:hover {
@@ -431,19 +443,22 @@
 } 
 
 .doctor-details img {
-    position: relative;
+    display: inline-block;
+    position: absolute;
     width: 75px!important;
     height: 75px!important;
     border-radius: 50%;
     text-align: right !important;
     direction: rtl;
-    margin: auto auto auto 80%;
+    margin: auto 0 0 auto;
+    right: 0;
+    bottom: -10%;
 }
 
 .doctor-details h4 {
     position: absolute;
-    top: 10%;
-    right: 110px;
+    top: 40%;
+    right: 85px;
     font-size: 14px;
     font-weight: bold;
     background-color: transparent;
@@ -451,11 +466,142 @@
 
 .doctor-details p {
     position: absolute;
-    top: 35%;
-    right: 110px;
+    top: 65%;
+    right: 80px;
     font-size: 14px;
+    padding-top: 0px !important;
+    padding-bottom: 0;
 }
 
+.reviewer { 
+    direction: rtl;
+    position: absolute;
+    left:50px;
+    bottom: 30px;
+}
+
+.corona-sevices {
+    background-image: url(../resources/corona-box.png);
+    background-size: cover;
+    margin: auto auto;
+    width: 100%;
+    height: 650px;
+    text-align: center;
+}
+
+.inner-corona-services {
+    direction: rtl;
+    background-color: transparent;
+    width: 58%;
+    margin: 100px auto auto auto;
+    position: relative;
+    font-size: 16px;
+    display: flex;
+    justify-content: center!important;
+
+}
+
+.corona-sevices h2 {
+    position: relative;
+    top: 4rem;
+    margin: 3rem auto 4rem auto;
+    color: white;
+    background-color: transparent;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.corona-service {
+    height: 486px;
+    color: white;
+    width: 376px;
+    text-align: center!important;
+    background-color: transparent;
+    
+}
+
+.corona-service img{
+    margin: 0px;
+    border-style: none;
+    width: 313px;
+    background: transparent;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.corona-service h2{
+    background: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+    top: -30px;
+    cursor: pointer;
+}
+
+.corona-service p{
+    background: transparent;
+    width: 200px;
+    width: 80%;
+    font-size: 14px;
+    text-align: justify!important;
+    top: 10px;
+    margin: 0 auto 0 auto;
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+}
+
+.corona-service-button {
+    display: inline-block;
+    font-weight: 400;
+    background-color: #fb815e;
+    border-color: #fb815e;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 10px;
+    justify-content: center !important;
+    border: 0;
+    color: white;
+    height: 58px;
+    width: 314px;
+    font-size: 16px;
+    margin: 0 auto auto 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.corona-service-button svg {
+    background-color: transparent;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center !important;
+    position: relative;
+    bottom: 15px;
+    right: 70px;
+    cursor: pointer;
+
+}
+
+.corona-service-button p {
+    text-align: center;
+    font-size: 16px;
+    justify-content: center !important;
+    position: relative;
+    top: 10px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.corona-service-button:hover {
+    background-color: tomato;
+    cursor: pointer;
+} 
 
 
 
