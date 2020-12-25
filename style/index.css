@@ -10,6 +10,10 @@
     background-color:#fafafa;
 }
 
+*:focus {
+    outline: none;
+}
+
 
 .header {
     position: fixed;
@@ -17,6 +21,7 @@
     left: 0;
     height: 90px;
     width: 100%;
+    z-index: 3;
 }
 
 .inner-header {
@@ -604,5 +609,155 @@
 } 
 
 
+.download-div {
+    direction: rtl;
+    background-color: transparent;
+    width: 58%;
+    margin: 100px auto auto auto;
+    position: relative;
+    font-size: 16px;
+    display: flex;
+    justify-content: center!important;
+
+}
+
+.download-link {
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 10px;
+
+}
+
+.download-link img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.download-buttons {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.download-buttons img {
+    height: 31px;
+    width: auto;
+    margin: auto 7px auto 7px;
+    cursor: pointer;
+} 
+
+.download-description {
+    position: relative;
+    top: 40px;
+}
+
+.download-description h2 {
+    margin: 0 0 8px;
+    padding: 0 0 16p;
+    font-size: 20px;
+}
+
+.download-description-firstp {
+    color: #6e7794 !important;
+    margin: 20px 0 40px;
+    padding: 0 0 16p;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+.enter-phone-desc {
+    margin: 0 0 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3b4157 !important;
+    position: relative;
+    top: 30px;
+    right: 0;
+
+}
+
+.download-description button {
+    background-color: #fb815e;
+    border-radius: 10px;
+    height: 48px;
+    width: 150px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    position: relative;
+    top:50px;
+    right: 250px;
+}
+
+.download-description svg {
+    background-color: transparent;
+    color: white;
+    position: relative;
+    right: -90px;
+    bottom: 28%;
+    margin: auto 0 auto 0;
+    z-index: 2;
+}
+
+.download-description p {
+    background-color: transparent;
+    color: white;
+    position: relative;
+    left: -10%;
+    bottom: 90%;
+    margin: auto 0 auto 0;
+    z-index: 2;
+}
 
 
+.download-description button:hover{
+    background-color: #f3957b;
+    border-radius: 10px;
+    transition: all .5s;
+    width: 150px;
+    z-index: 1;    
+}
+
+
+.hidden-btn-shadow {
+    display: inline-block;
+    right: -30%;
+    width: 60px;
+    position: relative;
+    height: 100%;
+    border-radius: 20px 10px 10px 20px;
+    background-color: #fc9c81;
+    z-index: 1;
+    transition: all .5s;
+}
+
+.enter-phone-num {
+    position: relative;
+    bottom: 8px;
+    display: block;
+    width: 52%;
+    height: 48px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding-right: 20px;
+    direction: rtl;
+
+}
+
+.enter-phone-num::placeholder {
+    color: lightgray;
+    position: relative;
+    direction: rtl;
+    right: 20px;
+    font-size: small;
+}
