@@ -678,24 +678,11 @@
 
 }
 
-.download-description button {
-    background-color: #fb815e;
-    border-radius: 10px;
-    height: 48px;
-    width: 150px;
-    cursor: pointer;
-    color: white;
-    border: none;
-    position: relative;
-    top: 50px;
-    right: 250px;
-}
-
-.download-description svg {
+.grow-button-shadow svg {
     background-color: transparent;
     color: white;
-    position: relative;
-    right: -90px;
+    position: absolute;
+    right: 20px;
     bottom: 28%;
     margin: auto 0 auto 0;
     z-index: 2;
@@ -712,26 +699,50 @@
 }
 
 
-.download-description button:hover {
-    background-color: #f3957b;
+.grow-button-shadow {
+    background-color: #fb815e;
     border-radius: 10px;
-    transition: all .5s;
+    position: absolute;
+    height: 48px;
     width: 150px;
-    z-index: 1;
+    cursor: pointer;
+    color: white;
+    border: none;
+    position: relative;
+    top: 42px;
+    right: 260px;
 }
 
 
 .hidden-btn-shadow {
     display: inline-block;
-    right: -30%;
+    right: 0;
     width: 60px;
-    position: relative;
+    position: absolute;
+    top: 0px;
     height: 100%;
     border-radius: 20px 10px 10px 20px;
     background-color: #fc9c81;
     z-index: 1;
     transition: all .5s;
+    -webkit-transition:width 500ms;
+	-moz-transition:width 500ms;
+	transition:width 500ms;
 }
+
+.grow-button-shadow:hover .hidden-btn-shadow {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.grow-button-shadow p {
+    position: absolute;
+    display: inline-block;
+    left: 10px;
+    top:22px;
+}
+
 
 .enter-phone-num {
     position: relative;
@@ -920,22 +931,74 @@
     direction: rtl;
 }
 
+.grow-button-foot {
+    position: absolute;
+    right:0;
+    top: -40px;
+}
+
 .sub-button{
+    display: inline-block;
     width: 390px;
     height: 50px;
     color: white;
     border-radius: 12px;
     border: none;
     background-color: #e98063;
-    position: relative;
-    top: -50px;
+    position: absolute;
+    top: -13px;
+    right: 33%;
     transition: all .5s;
+    margin-bottom: 20px;
+    cursor: pointer !important;
+
 
 }
 
-.sub-button:hover{
+.grow-button-foot svg {
+    display: inline;
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    right: 34%;
+    top: 2px;
+    z-index: 3;
+}
+
+
+.hidden-footer-btn-shadow {
+    display: inline-block;
+    background-color: #d1a99e !important;
+    border-radius: 20px;
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    position: absolute !important;
+    right: 33%;
+    top: -13px !important;
+    z-index: 1;
     transition: all .5s;
-    background-color: tomato;
+}
+
+.grow-button-foot:hover .hidden-footer-btn-shadow {
+    display: inline-block;
+    background-color: #d1a99e !important;
+    border-radius: 10px;
+    position: absolute;
+    width: 390px;
+    height: 50px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    position: absolute !important;
+    right: 33%;
+    top: -13px !important;
+    z-index: 2;
+    transition: all .5s;
+
 }
 
 
@@ -951,8 +1014,23 @@
     z-index: 2;
 }
 
+.sub-button p{
+    display: inline-block;
+    position: absolute;
+    margin: 0 0 0 0;
+    right: 5px;
+    padding: auto 0 auto 0 !important;
+    top: 20px;
+    width: 100%;
+    height: 20px;
+    color: white;
+    transform: translate(-0%, -50%);
+    z-index: 2;
+}
+
 .footer-end-logos {
     background-color: transparent;
+    margin-top: 20px;
 }
 
 .footer-end-logos img {
@@ -977,4 +1055,11 @@
     margin-top:20px;
     margin-bottom: 10px;
     font-size: small;
+}
+
+.end-foot-div svg {
+    color: #fa5a2c;
+    fill: #fa5a2c;
+    position: relative;
+    top: 33%;
 }
